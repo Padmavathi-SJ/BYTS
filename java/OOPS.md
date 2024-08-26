@@ -555,3 +555,39 @@ output: while Parent.java:
 **Identification of instance members from top to bottom only.**
 **Execution of instance veriable assignments and instance blocks from top to bottom only.**
 **Execution of corresponding constructors.**
+
+**Ex:01**
+
+```
+class Parent{
+    int i=10;
+    {
+        m1();
+        System.out.println("PFIB");
+    }
+    Parent(){
+        System.out.println("Parent-class");
+    }
+    public static void main(String[] args){
+         Parent p=new Parent();
+         System.out.println("Parent-main");
+         p.m1();
+    }
+    public void m1(){
+        System.out.println(j);
+    }
+    {
+    System.out.println("PSIB");
+}
+    int j=20;
+}
+
+output: while Parent.java
+         0
+         PFIB
+         PSIB
+         parent-class
+         parent-main
+         20
+```
+
