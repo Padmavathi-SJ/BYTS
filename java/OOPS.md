@@ -3,6 +3,7 @@
   ## 2. Object
   ## 3. Data hiding
   ## 4. Abstraction
+  ## 5. Encapsulation
 
 ## 1. Class:
 
@@ -100,4 +101,8 @@ class Product{
     }
 }
 ```
+### Tightly Encapsulated:
+
+**If every instance of the class is declared by using private modifier then that class is tightly encapsulated.**
+**If parent class is not tightly encapsulated, then no child class is tightly encapsulated.**
 
