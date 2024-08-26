@@ -546,3 +546,12 @@ output: while Parent.java:
 
 **Whenever we are loading parent class, child class won't be loaded automatically.**
 **But whenever we are loading child class, parent class will be loaded automatically, but won't execute or load the parent main method or class.**
+
+## 12. Instance Control Flow:
+
+**Always associated with objects only.**
+**We cannot access non-static methods directly from static area.**
+**Whenever we are creating objects for a class, the balance sequence of steps will be performed automatically.**
+**Identification of instance members from top to bottom only.**
+**Execution of instance veriable assignments and instance blocks from top to bottom only.**
+**Execution of corresponding constructors.**
