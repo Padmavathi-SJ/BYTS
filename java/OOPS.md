@@ -8,6 +8,7 @@
   ## 7. Has-A Relationship
   ## 8. Method Signature
   ## 9. Method Overloading
+  ## 10. Method Overrriding
 
 ## 1. Class:
 
@@ -343,3 +344,11 @@ public static void main(String[] args){
    **Method Overloading is called as Static Polymorphism or Compile-time Polymorphism in early binding.**
    **Method Overloading is a reference type Polymorphism.**
    **In Overloading method resolution is take and care by java compiler based on reference type.**
+
+
+## 10. Method Overriding:
+
+**1. Throught Is-A Relationship whatever Parent class has (properties, behaviors) are by defuault available to the child class.**
+**2. If child is not satisfied with parent behavior, then child can change that behavior by using Method Overriding.**
+
+
