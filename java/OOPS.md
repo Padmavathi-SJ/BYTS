@@ -591,3 +591,76 @@ output: while Parent.java
          20
 ```
 
+**Ex:02**
+
+```
+class Parent{
+    int i=10;
+    {
+        m1();
+        System.out.println("PFIB");
+    }
+    Parent(){
+        System.out.println("Parent-class");
+    }
+    public static void main(String[] args){
+         Parent p=new Parent();
+         System.out.println("Parent-main");
+         p.m1();
+    }
+    public void m1(){
+        System.out.println(j);
+    }
+    {
+    System.out.println("PSIB");
+}
+    int j=20;
+}
+
+class Child extends Parent{
+    int a=100;
+    {
+        m2();
+        System.out.println("CFIB");
+    }
+    Child(){
+        System.out.println("Child-class");
+    }
+    public static void main(String[] args){
+        Child c=new Child();
+        System.out.println("Child-main");
+        c.m2();
+    }
+    public void m2(){
+        System.out.println(b);
+    }
+    {
+        System.out.println("CSIB");
+    }
+    int b=200;
+}
+
+output: While Parent.java
+        0
+        PFIB
+        PSIB
+        Parent class
+        parent-main
+        20
+
+        While Child.java
+        0
+        PFIB
+        PSIB
+        Parent class
+        0
+        CFIB
+        CSIB
+        child class
+        child-main
+        200
+```
+
+**Whenever we are loading parent class, child class won't be loaded automatically.**
+**But whenever we are loading child class, parent class will be loaded automatically, but won't execute or load the parent main method or class.**
+
