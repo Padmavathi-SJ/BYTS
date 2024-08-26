@@ -399,6 +399,7 @@ class Test{
 **Whenever we are executing java class, the balance sequence of steps will be performed automatically.**
 **Identification of all static memebers from parent to child and top to bottom.**
 **Identification of all static variable assignments from parent to child and top to bottom only.**
+**Execution of main method.**
 
 **Ex:01**
 
