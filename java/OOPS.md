@@ -390,4 +390,40 @@ class Test{
 **In Method Overriding , method resolution take and care by JVM based on the runtime objects.**
 **Hence it is called as Dynamic Polymorphism, and run-time Polymorphism in late binding.**
 
+## 11. Static Control Flow:
+
+**Whenever we are executing java class, the balance sequence of steps will be performed automatically.**
+**Identification of all static memebers from parent to child and top to bottom.**
+**Identification of all static variable assignments from parent to child and top to bottom only.**
+
+**Ex:01**
+
+```class Test {
+    static int x=10;
+    static {
+        System.out.println("FSB");
+        m1();
+    }
+    public static void main(String[] args){
+        m1();
+        System.out.println("Main method");
+    }
+    public static void m1(){
+        System.out.println(y);
+        
+    }
+    static {
+        System.out.println("SSB");
+    }
+    static int y=20;
+}
+
+output: FSB
+        0
+        SSB
+        20
+        main method
+
+```
+
 
