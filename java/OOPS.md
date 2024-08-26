@@ -304,3 +304,41 @@ class Test{
     }
 }
 ```
+
+**Ex:05**
+
+```
+class Person {
+    
+}
+class Student extends Person {
+    
+}
+class Test {
+    public static void m1(Person p){
+        System.out.println("Person");
+    }
+    public static void m1(Student s){
+        System.out.println("Student");
+    }
+
+public static void main(String[] args){
+    Person p=new Person();
+    m1(p);
+    Student s=new Student();
+    m1(s);
+    Person p2=new Person();
+    m1(p2);
+}
+}
+```
+
+## Polymorphism:
+**1. Polymorphism in java allows objects of different classes to be treated as objects of a common Parent class.**
+**2. A single function can behave differently based on the objects.**
+
+### Types of Polymorphism:
+**1. Compile-time Polymorphism**
+   **Method Overloading is called as Static Polymorphism or Compile-time Polymorphism in early binding.**
+   **Method Overloading is a reference type Polymorphism.**
+   **In Overloading method resolution is take and care by java compiler based on reference type.**
