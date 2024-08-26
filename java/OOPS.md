@@ -113,7 +113,7 @@ class Product{
 **2. By using extends keyword we can derive inheritance. (Inheritance is nothing but, Parent[superclass] - Child[subclass] relationship)**
 **3. The main advantage of Is-A Relationship is code-reusability.**
 
-**Ex:**
+**Ex: Dog is an Animal.**
 
 ```
 class Animal{
@@ -149,3 +149,38 @@ class Test{
 **5. By using this reference we can invoke only parent methods and can't invoke child specific methods.**
 **6. So we have to place the most common methods in the parent class only, place the specifics in child methods.**
 **hi**
+
+## 7. Has-A Relationship:
+
+**1. This is also known as composition and agreegation.**
+**2. there is no specific keyword to define Has-A Relationship, but we can use new keyword to create the dependend object.**
+**3. The main advantage of Has-A Relationship is code-reusability.**
+
+**Ex: Car has a Engine.**
+
+```
+class car {
+    Engine e;
+    car(Engine e) {
+        this.e=e;
+    }
+public void move(){
+    e.start();
+        System.out.println("Car is moving...");
+    }
+}
+
+class Engine{
+    public void start(){
+        System.out.println("Engine started");
+    }
+}
+
+class Test{
+    public static void main(String[] args){
+        Engine e=new Engine();
+        car c=new car(e);
+        c.move();
+    }
+}
+```
