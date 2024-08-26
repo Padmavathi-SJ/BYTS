@@ -13,7 +13,9 @@
   **Static Control Flow in Parent-Child Relationship**
   ## 12. Instance Control Flow
   **Instance Control Flow in Parent-Child Relationship**
-  
+  ## 14. TypeCasting
+  **Widening(auto) & Narrowing(explicitly)**
+  ## 15. Coupling
 
 ## 1. Class:
 
