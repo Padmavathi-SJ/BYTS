@@ -1,4 +1,4 @@
-### 2. Add Two Numbers:
+### problem no: 2. Add Two Numbers:
 
 **You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.**
@@ -28,4 +28,25 @@ class Solution {
         return t.next;
     }
 }
+```
+
+### problem no: 189. Rotate Array:
+
+**Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.**
+
+**using c++**
+
+```
+class Solution{
+    public:
+    void rotate(vector <int> &nums, int k){
+        int n=nums.size();
+        k=k%n;
+        vector <int>res(n);
+        for(int i=0; i<n; i++){
+            res[(i+k) % n] = nums[i];
+        }
+        nums=res;
+    }
+};
 ```
