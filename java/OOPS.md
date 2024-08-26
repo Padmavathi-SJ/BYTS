@@ -775,4 +775,57 @@ output: Engine Started
         
 2. Loosely Coupling:
      * If one object is talking to another object by using interfaces or abstract classes , then such type of classes are loosely coupled with each other.
+  
+**Ex:**
+
+```
+interface Engine {
+    void start();
+}
+
+class PetrolEngine implements Engine {
+    public void start() {
+        System.out.println("Petrol Engine started");
+    }
+}
+
+class DeiselEngine implements Engine {
+    public void start() {
+        System.out.println("Deisel Engine started");
+    }
+}
+
+class Car {
+    private Engine engine;
+    
+    public Car(Engine engine) {
+        this.engine=engine;
+    }
+    
+    public void startCar() {
+        engine.start();
+        System.out.println("Car started");
+    }
+}
+
+public class Test {
+    public static void main(String[] args){
+        Engine PE = new PetrolEngine();
+        Car car1 = new Car(PE);
+        car1.startCar();
+
+    
+    Engine DE = new DeiselEngine();
+    Car car2 = new Car(DE);
+    car2.startCar();
+    
+    }
+}
+
+output: Petrol Engine started
+        Car started
+        Deisel Engine started
+        Car started
+
+```
    
