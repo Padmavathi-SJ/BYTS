@@ -11,6 +11,8 @@
   ## 10. Method Overrriding
   ## 11. Static Control Flow 
   **Static Control Flow in Parent-Child Relationship**
+  ## 12. Instance Control Flow
+  **Instance Control Flow in Parent-Child Relationship**
 
 ## 1. Class:
 
