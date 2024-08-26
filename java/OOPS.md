@@ -39,3 +39,28 @@ System.out.println(s2.id + "...." + s2.name);
 }
 }
 ```
+
+## 3. Data Hiding:
+
+**1. Data hiding is the process of hiding the data from the direct access.**
+**2. By this we can achieve security.**
+**3. By using private modifier we can achieve data hiding.**
+
+**Ex:**
+```
+class Account{
+    private double balance;
+    public double getbalance(){
+        return balance;
+    }
+    
+}
+
+class Test{
+    public static void main(String[] args){
+        Account a=new Account();
+        System.out.println(a.balance); //CE: balance has private access in account 
+        System.out.println(a.getbalance()); //0.0
+    }
+}
+```
