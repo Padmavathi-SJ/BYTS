@@ -716,3 +716,16 @@ class widening{
 
    **2. Narrowing(Explicitly):**
         **Converting a larger data type to smaller data type. This requires explicit action by the programmer. Because there is a risk of losing data.**
+
+**Ex for NarrowingL**
+```
+class widening{
+    public static void main(String[] args){
+        double val=25.25;
+        int double_to_int = (int) val;
+        
+        System.out.println("Double value: " + val); // Double value: 25.25
+        System.out.println("Integer value: " + double_to_int); // double_to_int: 25
+    }
+}
+```
