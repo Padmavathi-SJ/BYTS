@@ -77,3 +77,27 @@ class Test{
 **7. They will give only services not the implementation part.**
 **8. They will give method like getFlights(), this is nothing but a service only.**
 
+
+## 5. Encapsulation:
+
+**1. Binding the data together with its related methods is the concept of Encapsulation.**
+
+```
+class Product{
+    private int id;
+    private String name;
+    public void setId(int id){
+        this.id=id;
+    }
+    public int getId(){
+        return id;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
+    }
+}
+```
+
