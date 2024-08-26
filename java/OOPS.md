@@ -701,5 +701,18 @@ output:
    **1. Widening(Automatically):**
        **Converting a smaller data type to larger datatype. This happens automatically by the compiler without any explicit action by the programmer.**
 
+**Ex for Widening:**
+```
+class widening{
+    public static void main(String[] args){
+        int intVal=10;
+        double int_to_double = intVal;
+        
+        System.out.println("Integer value: " + intVal); // Integer value: 10
+        System.out.println("Double value: " + int_to_double); // Double value: 10.0
+    }
+}
+```
+
    **2. Narrowing(Explicitly):**
         **Converting a larger data type to smaller data type. This requires explicit action by the programmer. Because there is a risk of losing data.**
