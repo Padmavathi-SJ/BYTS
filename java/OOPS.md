@@ -10,7 +10,7 @@
   ## 9. Method Overloading
   ## 10. Method Overrriding
   ## 11. Static Control Flow 
-     **Static Control Flow in Parent-Child Relationship**
+  **Static Control Flow in Parent-Child Relationship**
 
 ## 1. Class:
 
