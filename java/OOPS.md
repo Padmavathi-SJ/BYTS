@@ -391,6 +391,8 @@ class Test{
 **In Method Overriding , method resolution take and care by JVM based on the runtime objects.**
 **Hence it is called as Dynamic Polymorphism, and run-time Polymorphism in late binding.**
 
+**If any method's behavior, if we wants to change, we can change only through "Method Overriding".**
+
 ## 11. Static Control Flow:
 
 **Whenever we are executing java class, the balance sequence of steps will be performed automatically.**
