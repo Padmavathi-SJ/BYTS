@@ -4,6 +4,7 @@
   ## 3. Data hiding
   ## 4. Abstraction
   ## 5. Encapsulation
+  ## 6. Is-A Relationship
 
 ## 1. Class:
 
