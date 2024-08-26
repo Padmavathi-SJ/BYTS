@@ -351,4 +351,38 @@ public static void main(String[] args){
 **1. Throught Is-A Relationship whatever Parent class has (properties, behaviors) are by defuault available to the child class.**
 **2. If child is not satisfied with parent behavior, then child can change that behavior by using Method Overriding.**
 
+**Ex:01**
+```
+class P{
+    public void gotJob(){
+        System.out.println("Achieved");
+    }
+    public void MakeHappyMom(){
+        System.out.println("Love you mummy");
+    }
+}
+
+class C extends P {
+    public void MakeHappyMom(){
+        System.out.println("Kavima");
+    }
+    }
+    
+class Test{
+    public static void main(String[] args){
+        P p=new P();
+        p.gotJob(); //Achieved
+        p.MakeHappyMom(); //Love you mummy
+        
+        C c=new C();
+        c.gotJob(); //Achieved
+        c.MakeHappyMom(); //Kavima
+        
+        P p2=new P();
+        p2.gotJob(); //Achieved
+        p2.MakeHappyMom(); //Love you mummy
+        
+    }
+}
+```
 
