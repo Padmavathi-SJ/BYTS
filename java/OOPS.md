@@ -220,7 +220,7 @@ class Test {
 
 **1. In java we can declare 2 or more methods with same method name, but different parameter lists, such type of methods are called as Overloaded Methods, and this concept is called as Method Overloading.**
 
-**Ex:
+**Ex: 01**
 ```
 class Test{
     public static void m1(int a){
@@ -236,6 +236,26 @@ class Test{
         m1(2.5f); //float-arg
         m1('a'); //int-arg
     //  m1(true); //no suitable method found for m1(boolean)
+    }
+}
+```
+
+**Ex:02 **
+
+```
+class Test{
+    public static void m1(int a, float b){
+        System.out.println("int-float");
+    }
+    public static void m1(float a, int b){
+        System.out.println("float-int");
+    }
+    
+    public static void main(String[] args){
+        m1(10, 5.2f); //int-float
+     // m1(25.54, 65.21); //no suitable found for m1(double, double)
+        m1(2.5f, 5); //float-int
+    //  m1(10, 10); //no suitable method found for m1(int, int)
     }
 }
 ```
