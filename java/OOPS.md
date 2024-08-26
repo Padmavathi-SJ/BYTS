@@ -279,3 +279,28 @@ class Test{
     }
 }
 ```
+
+**Ex:04**
+
+```
+class Test{
+    public void m1(String s){
+        System.out.println("String-arg");
+    }
+    public void m1(Thread t){
+        System.out.println("Thread-arg");
+    }
+    public void m1(Object O){
+        System.out.println("Object-arg");
+    }
+    
+    
+    public static void main(String[] args){
+       Test t=new Test();
+       t.m1(new String());  //String-arg
+       t.m1(new Object());  //Object-arg
+       t.m1(new Thread());  //Thread-arg
+       
+    }
+}
+```
