@@ -93,7 +93,9 @@ class Solution {
 }
 ```
 
-###
+### 42. Trapping Rain Water:
+
+**
 ```
 class Solution {
     public int trap(int[] height) {
