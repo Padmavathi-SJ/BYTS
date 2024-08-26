@@ -386,3 +386,8 @@ class Test{
 }
 ```
 
+**Method Overriding is dependent on Object not reference.**
+**In Method Overriding , method resolution take and care by JVM based on the runtime objects.**
+**Hence it is called as Dynamic Polymorphism, and run-time Polymorphism in late binding.**
+
+
