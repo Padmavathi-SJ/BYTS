@@ -735,4 +735,44 @@ class widening{
 ## 15. Coupling:
 
 * There are two types of coupling is available in java:
-* 1. Tightly Coupling:
+  
+1. Tightly Coupling:
+     **If one object is talking to another object directly by creating it, such type of classes are tightly coupled with each other.**
+
+**Ex:**
+
+```
+class Engine {
+    public void start(){
+        System.out.println("engine Started");
+    }
+}
+
+class Car {
+    private Engine engine;
+    
+    public Car() {
+        this.engine = new Engine();
+    }
+    
+    public void startCar() {
+        engine.start();
+        System.out.println("Car started");
+    }
+}
+
+public class Test {
+    public static void main(String[] args){
+        Car car=new Car();
+        car.startCar();
+    }
+}
+
+output: Engine Started
+        Car started
+
+```
+        
+2. Loosely Coupling:
+     **If one object is talking to another object by using interfaces or abstract classes , then such type of classes are loosely coupled with each other.**
+   
