@@ -185,3 +185,10 @@ class Test{
     }
 }
 ```
+
+## 8. Method Signature:
+
+**1. Method signature in java consists Mathod's name and parameter lists(arguments passed).**
+**2. Method signature uniquely identifies the method within a class.**
+**3. We can create different methods with same method name , but different parameter types arguments, so java compiler can easily identify which method we have to call now like.**
+
