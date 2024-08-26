@@ -106,3 +106,45 @@ class Product{
 **If every instance of the class is declared by using private modifier then that class is tightly encapsulated.**
 **If parent class is not tightly encapsulated, then no child class is tightly encapsulated.**
 
+## 6. Is-A Relationship:
+
+**1. This is also known as Inheritance.**
+**2. By using extends keyword we can derive inheritance. (Inheritance is nothing but, Parent[superclass] - Child[subclass] relationship)**
+**3. The main advantage of Is-A Relationship is code-reusability.**
+
+**Ex:**
+
+```
+class Animal{
+    String name;
+    
+    void eat(){
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal{
+    void bark(){
+        System.out.println("This dog barks");
+    }
+    void eat(){
+        System.out.println("This dog eats bones");
+    }
+}
+
+class Test{
+    public static void main(String[] args){
+        Dog d=new Dog();
+        d.name="charlie";
+        System.out.println("dogs name is: " + d.name);
+        
+        d.bark();
+        
+        d.eat();
+    }
+}
+```
+**4. We can user parent refernce to represent child object.**
+**5. By using this reference we can invoke only parent methods and can't invoke child specific methods.**
+**6. So we have to place the most common methods in the parent class only, place the specifics in child methods.**
+
