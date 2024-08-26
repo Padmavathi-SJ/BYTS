@@ -668,3 +668,26 @@ output: While Parent.java
 **Whenever we are loading parent class, child class won't be loaded automatically.**
 **But whenever we are loading child class, parent class will be loaded automatically, but won't execute or load the parent main method or class.**
 
+## Singleton Class:
+
+**For any java class, if we are allowed to create almost only one object, such type of class is called as "Singleton Class".**
+
+**Ex:01**
+
+```
+class Test{
+    public static void main(String[] args){
+        Runtime r1=Runtime.getRuntime();
+        Runtime r2=Runtime.getRuntime();
+        System.out.println(r1==r2);
+        System.out.println(r1.hashCode());
+        System.out.println(r2.hashCode());
+    }
+}
+
+output:
+      true
+      1608446010
+      1608446010
+```
+
