@@ -482,3 +482,61 @@ output: 0
 **Whenever we are executing the child class, the below sequence of steps will be performed automatically.**
 
 **Ex:01**
+
+```
+class P{
+    static int x=10;
+    static {
+        m1();
+        System.out.println("PFSB");
+    }
+    public static void main(String[] args){
+        m1();
+       System.out.println("parent-main");
+    }
+    
+    public static void m1(){
+        System.out.println(y);
+    }
+    static {
+        System.out.println("PSSB");
+    }
+    static int y=20;
+}
+    
+class C extends P{
+        static int a=100;
+        static {
+            m2();
+            System.out.println("CFSB");
+        }
+        public static void main(String[] args){
+            m2();
+            System.out.println("Child-main");
+        }
+        public static void m2(){
+            System.out.println(b);
+        }
+        static {
+            System.out.println("CSSB");
+        }
+        static int b=200;
+    }
+
+output: while Parent.java:
+        0
+        PFSB
+        PSSB
+        20
+        parent-main
+
+        while Child.java:
+        0
+        PFSB
+        PSSB
+        0
+        CFSB
+        CSSB
+        200
+        Child-main
+```
