@@ -6,6 +6,7 @@
   ## 5. Encapsulation
   ## 6. Is-A Relationship
   ## 7. Has-A Relationship
+  ## 8. Method Signature
 
 ## 1. Class:
 
@@ -192,3 +193,25 @@ class Test{
 **2. Method signature uniquely identifies the method within a class.**
 **3. We can create different methods with same method name , but different parameter types arguments, so java compiler can easily identify which method we have to call now like.**
 
+```
+class Calculator{
+    //Method signature: add(int, int)
+    public int add(int a, int b){
+        return a+b;
+    }
+    //Method signature: double(double, double)
+    public double add(double a, double b){
+        return a+b;
+    }
+}
+
+class Test {
+    public static void main(String[] args){
+        Calculator calc=new Calculator();
+        System.out.println(calc.add(10,5)); //15  calls add(int, int)
+        System.out.println(calc.add(5.2,7.5)); //12.7  calls add(double, double)
+    }
+}
+```
+
+**here, add(int a, int b) and add(duoble a, double b) have the same method name, but different parameters.**
