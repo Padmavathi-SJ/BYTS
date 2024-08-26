@@ -540,3 +540,6 @@ output: while Parent.java:
         200
         Child-main
 ```
+
+**Whenever we are loading parent class, child class won't be loaded automatically.**
+**But whenever we are loading child class, parent class will be loaded automatically, but won't execute or load the parent main method or class.**
