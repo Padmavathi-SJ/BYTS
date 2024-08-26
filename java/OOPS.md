@@ -734,5 +734,5 @@ class widening{
 
 ## 15. Coupling:
 
-**There are two types of coupling is available in java:**
-    **1. Tightly Coupling:**
+* There are two types of coupling is available in java:
+* 1. Tightly Coupling:
