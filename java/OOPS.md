@@ -2,6 +2,7 @@
   ## 1. Class
   ## 2. Object
   ## 3. Data hiding
+  ## 4. Abstraction
 
 ## 1. Class:
 
@@ -64,3 +65,15 @@ class Test{
     }
 }
 ```
+
+## 4. Abstraction:
+
+**1.The process of Highlighting the required services by hiding the implementaion is called Abstraction.**
+**2. By using abstract classes and references , we can achieve Abstraction.**
+**3. We can achieve security as we are not highlighting the internal implementation.**
+**4. Enhancement will be increased**
+**5. Changes or any other big corrections is very easy that can be done in any other side.**
+**6. Modularity and maintainability of the application.**
+**7. They will give only services not the implementation part.**
+**8. They will give method like getFlights(), this is nothing but a service only.**
+
