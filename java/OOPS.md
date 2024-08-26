@@ -5,6 +5,7 @@
   ## 4. Abstraction
   ## 5. Encapsulation
   ## 6. Is-A Relationship
+  ## 7. Has-A Relationship
 
 ## 1. Class:
 
