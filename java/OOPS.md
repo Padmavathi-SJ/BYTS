@@ -479,4 +479,6 @@ output: 0
 
 ### Static Control Flow in Parent-Child Relationship
 
+**Whenever we are executing the child class, the below sequence of steps will be performed automatically.**
 
+**Ex:01**
