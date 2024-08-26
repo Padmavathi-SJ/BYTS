@@ -13,6 +13,7 @@
   **Static Control Flow in Parent-Child Relationship**
   ## 12. Instance Control Flow
   **Instance Control Flow in Parent-Child Relationship**
+  
 
 ## 1. Class:
 
@@ -691,3 +692,14 @@ output:
       1608446010
 ```
 
+## 14. TypeCasting:
+
+**Typecasting in java is the process of converting a variable from one data type to another data type.**
+
+**There are two main types of typecasting is available in java:**
+
+   **1. Widening(Automatically):**
+       **Converting a smaller data type to larger datatype. This happens automatically by the compiler without any explicit action by the programmer.**
+
+   **2. Narrowing(Explicitly):**
+        **Converting a larger data type to smaller data type. This requires explicit action by the programmer. Because there is a risk of losing data.**
