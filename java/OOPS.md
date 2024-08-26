@@ -425,5 +425,55 @@ output: FSB
         main method
 
 ```
+**here, first static class blocks only will be executed first, then only main class will be executed.**
+
+**Ex:02**
+```
+class Test{
+    static int x=10;
+    static {
+        System.out.println(x);
+    }
+    public static void main(String[] args){
+        
+    }
+}
+
+output: 10
+```
+
+**Ex:03**
+```
+class Test{
+    static {
+        System.out.println(x);
+    }
+    public static void main(String[] args){
+        
+    }
+        static int x=10;
+}
+output: Illegal forward reference
+```
+
+**Ex:04**
+```class Test{
+    static {
+        m1();
+    }
+    public static void main (String[] args) {
+        
+    }
+    public static void m1(){
+        System.out.println(x);
+    }
+    static int x=10;
+}
+
+output: 0
+```
+
+
+### Static Control Flow in Parent-Child Relationship
 
 
