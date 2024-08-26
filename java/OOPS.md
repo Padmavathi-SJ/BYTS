@@ -215,3 +215,27 @@ class Test {
 ```
 
 **here, add(int a, int b) and add(duoble a, double b) have the same method name, but different parameters.**
+
+## 9. Method Overloading:
+
+**1. In java we can declare 2 or more methods with same method name, but different parameter lists, such type of methods are called as Overloaded Methods, and this concept is called as Method Overloading.**
+
+**Ex:
+```
+class Test{
+    public static void m1(int a){
+        System.out.println("int-arg");
+    }
+    public static void m1(float f){
+        System.out.println("float-arg");
+    }
+    
+    public static void main(String[] args){
+        m1(10); // int-arg
+     //  m1(25.54); //no suitable method found for m1(double)
+        m1(2.5f); //float-arg
+        m1('a'); //int-arg
+    //  m1(true); //no suitable method found for m1(boolean)
+    }
+}
+```
