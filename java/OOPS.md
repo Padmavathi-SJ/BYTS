@@ -737,7 +737,7 @@ class widening{
 * There are two types of coupling is available in java:
   
 1. Tightly Coupling:
-     **If one object is talking to another object directly by creating it, such type of classes are tightly coupled with each other.**
+     * If one object is talking to another object directly by creating it, such type of classes are tightly coupled with each other.
 
 **Ex:**
 
@@ -774,5 +774,5 @@ output: Engine Started
 ```
         
 2. Loosely Coupling:
-     **If one object is talking to another object by using interfaces or abstract classes , then such type of classes are loosely coupled with each other.**
+     * If one object is talking to another object by using interfaces or abstract classes , then such type of classes are loosely coupled with each other.
    
