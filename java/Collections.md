@@ -12,6 +12,7 @@
   ## LinkedHashSet
   ## SortedSet
   ## TreeSet
+  ## Map(I)
   
 
 ### Array:
