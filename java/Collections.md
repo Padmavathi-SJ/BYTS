@@ -395,5 +395,6 @@ class Test{
 ```
 Hashset s=new HashSet(int initialCapacity);
 HashSet s=new HashSet(int initialCapacity, float fillRatio);
+HashSet s=new HashSet(Collection c);
 ```
 * It creates an empty HashSet object with default initial capacity 16 and with fillRatio 0.75(must 0-1).
