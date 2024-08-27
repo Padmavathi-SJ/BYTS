@@ -546,3 +546,17 @@ class Test{
   }
   }
   ```
+
+### Important Methods:
+  * put(Object key, Object value) --> adds a new key-value pair if that key is not already present in map. O/W old value will be replaced by new value and returns the old value.
+  * putAll(Map m)
+  * get(Object obj)
+  * remove(Object key)
+  * containsKey(Object key)
+  * containsValue(Object value)
+  * isEmpty()
+  * clear()
+  * size()
+  * set keySet()
+  * set entrySet()
+  * collection values()
