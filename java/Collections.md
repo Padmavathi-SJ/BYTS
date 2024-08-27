@@ -141,3 +141,20 @@ class Test{
 
 * Every Collection class implements both Serializable and Cloneable Interfaces.
 * But LinkedList does not implement RandomAccess.
+
+**Ex:**
+```
+import java.util.*;
+import java.util.RandomAccess;
+import java.io.*;
+
+class Test{
+    public static void main(String[] args){
+        List l = new LinkedList();
+        
+        System.out.println(l instanceof Serializable); //true
+        System.out.println(l instanceof Cloneable); //true
+        System.out.println(l instanceof RandomAccess); //false
+    }
+}
+```
