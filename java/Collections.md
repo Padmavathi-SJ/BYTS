@@ -238,6 +238,41 @@ List ul=Collection.unmodifiableList(l);
 
 **Ex:**
 ```
-List l=new LinkedList();
-List l=new LinkedList(Collection c);
+LinkedList l=new LinkedList();
+LinkedList l=new LinkedList(Collection c);
 ```
+* Usually, LinkedList will be used to implement Stacks and Queues.
+
+**Important Methods:**
+  * addFirst(Object obj);
+  * addLast(Object obj);
+  * getFirst();
+  * getLast();
+  * removeFirst();
+  * removeLast();
+    
+**Ex:**
+
+```import java.util.*;
+class Test{
+    public static void main(String[] args){
+        LinkedList l=new LinkedList();
+       
+       l.add("A");
+       l.add(100);
+       l.add("A");
+       l.addFirst("S");
+       l.add(10.5);
+       l.addLast("P");
+       System.out.println(l); //[S, A, 100, A, 10.5, P]
+       
+       l.removeFirst(); 
+       System.out.println(l); //[A, 100, A, 10.5, P]
+       
+       l.removeLast();
+       System.out.println(l); //[A, 100, A, 10.5]
+       
+    }
+}
+```
+
