@@ -504,3 +504,23 @@ class Test{
   ```
 **Ex:**
 ```
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        SortedSet s=new TreeSet();
+        
+        s.add(10);
+        s.add(5);
+        s.add(20);
+        s.add(12);
+        s.add(6);
+        s.add(25);
+        //s.add("S"); //CCE
+        //s.add("P"); //CCE
+        //s.add(null); //NPE
+        
+        System.out.println(s); // [5,6,10,12,20,25]
+        
+}
+}
+```
