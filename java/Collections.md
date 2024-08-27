@@ -188,4 +188,18 @@ class Test{
 
   * mutable---> We can modify
   * immutable(unmodifiable)---> We cannot modify
+ 
+  **Ex:**
+  ```
+  import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Set s=new HashSet();
+        Map m=new HashMap();
+    Set ss=Collections.unmodifiableSet(s);
+    Map mm=Collections.unmodifiableMap(m);
+    }
+}
+```
+
     
