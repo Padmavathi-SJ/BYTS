@@ -452,6 +452,13 @@ class Test{
 * heterogeneous elements are not allowed, because we cannot compare.
 * duplicates are not allowed
 
+### Important methods:
+  * first();
+  * last();
+  * headSet(e); <e
+  * tailSet(e); >=e
+  * subSet(e1, e2); >=e1 & <e2
+
 **Ex:**
 ```
 import java.util.*;
@@ -472,7 +479,7 @@ class Test{
         System.out.println(s.first()); // A
         System.out.println(s.last()); // X
         System.out.println(s.headSet("G")); // [A, D] because "<G"
-        System.out.println(s.tailSet("S")); // [A, D, S] because "<=S"
+        System.out.println(s.tailSet("S")); // [S, T, X] because ">=S"
         System.out.println(s.subSet("D", "X")); // [D, S, T] because '>=D' and '<X'
         System.out.println(s.comparator()); // null
 }
