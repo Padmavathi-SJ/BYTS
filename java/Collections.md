@@ -314,3 +314,27 @@ Vecctor v=new Vector();
    * int size();
    * boolean isEmpty();
    * enumeration elements();
+
+  ```
+  import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Vector v=new Vector();
+        System.out.println(v.capacity()); //10
+       
+       for(int i=0; i<10; i++){
+           v.addElement(i);
+       }
+       System.out.println(v.capacity()); //10
+       v.addElement("x");
+       System.out.println(v.capacity()); //20 because newCapacity=oldCapacity*2 
+       
+       for(int i=11; i<22; i++){
+           v.addElement(i);
+       }
+           
+       System.out.println(v.capacity()); //40
+       System.out.println(v); [1,2,3,4,5,6,7,8,9,x,11,12,13,14,15,16,17,18,19,20,21]
+    }
+}
+```
