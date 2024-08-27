@@ -391,3 +391,9 @@ class Test{
 * Insertion order won't be preserved , because it is based on "hashcode" of the objects.
 * Heterogeneous elementsare allowed.
 * Null insertion is possible, but only once.
+
+```
+Hashset s=new HashSet(int initialCapacity);
+HashSet s=new HashSet(int initialCapacity, float fillRatio);
+```
+* It creates an empty HashSet object with default initial capacity 16 and with fillRatio 0.75(must 0-1).
