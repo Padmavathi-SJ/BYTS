@@ -411,7 +411,7 @@ class Test{
         s.add(null);
         s.add(10.5);
         s.add(null); //null insertion is posibble but only once
-        System.out.println(s.add("P")); // false
+        System.out.println(s.add("P")); // false, because duplicate element
         System.out.println(s); // [P, null, S, 100, 10.5] based on hashcode it alllocated in indies
 }
 }
