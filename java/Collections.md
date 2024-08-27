@@ -9,6 +9,8 @@
   ## Stack
   ## Set(I)
   ## HashSet
+  ## LinkedHashSet
+  ## SortedSet
   
 
 ### Array:
