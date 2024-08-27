@@ -420,8 +420,10 @@ class Test{
 ## LinkedHashSet:
 
 * LinkedHashSet is exactly same as Hashset except the below differences.
+  
 * In HashSet Data structure is hashtable, in LinkedHashSet , data structure is "LinkedList + hashTable".
 * In hashSet insertion order is not preserved(based on hashcode), but in LinkedHashSet, insertion order is preserved.
+  
 
 **Ex:**
 ```
