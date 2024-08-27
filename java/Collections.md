@@ -53,3 +53,11 @@
 * If we wants to represent a group of individual objects as a single object, where "duplicates" are allowed, and insertion order must be "preserved" we should go to that concept called "List".
 
 ### Important methods
+    * add(int index, Object obj)
+    * addAll(int index, Collection c)
+    * remove(int index)
+    * get(int index)
+    * set(int index, Object newObject)
+    * IndexOf(Object obj)
+    * LastIndexOf(Object obj)
+    * ListIterator listIterator()
