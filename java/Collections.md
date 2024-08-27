@@ -6,9 +6,10 @@
   ## ArrayList(I)
   ## LinkedList(I)
   ## Vector(I)
+  ## Stack
   
 
-  ## Array:
+### Array:
   
   * An array is index based based homogeneous data elements of fixed size.
   * All arrays are objects in java.
@@ -315,8 +316,8 @@ Vecctor v=new Vector();
    * boolean isEmpty();
    * enumeration elements();
 
-  ```
-  import java.util.*;
+```
+import java.util.*;
 class Test{
     public static void main(String[] args){
         Vector v=new Vector();
@@ -338,3 +339,14 @@ class Test{
     }
 }
 ```
+
+### Stack:
+
+*A special data structure for "FIRST IN LAST IN" purpose.
+
+### Important Methods:
+  * push(Object obj);
+  * pop();
+  * peek();
+  * empty();
+  * search(Object obj);
