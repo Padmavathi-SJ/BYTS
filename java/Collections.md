@@ -445,3 +445,36 @@ class Test{
 }
 }
 ```
+
+## SortedSet(I):
+
+* If we wants to represent a group a group of individual objects without duplicates according to some sorting order then we go to a concept called "SortedSet".
+* heterogeneous elements are not allowed, because we cannot compare.
+* duplicates are not allowed
+
+**Ex:**
+```
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        SortedSet s=new TreeSet();
+        
+        s.add("S");
+        s.add("A");
+        s.add("S");
+        s.add("D");
+        s.add("T");
+        s.add("X");
+        //s.add(10);
+        //s.add(null);
+        
+        System.out.println(s); // [A, D, S, T, X]
+        System.out.println(s.first()); // A
+        System.out.println(s.last()); // X
+        System.out.println(s.headSet("G")); // [A, D] because "<G"
+        System.out.println(s.tailSet("S")); // [A, D, S] because "<=S"
+        System.out.println(s.subSet("D", "X")); // [D, S, T] because '>=D' and '<X'
+        System.out.println(s.comparator()); // null
+}
+}
+```
