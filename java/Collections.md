@@ -472,8 +472,8 @@ class Test{
         s.add("D");
         s.add("T");
         s.add("X");
-        //s.add(10);
-        //s.add(null);
+        //s.add(10); //ClassCaste E
+        //s.add(null); //NullPointer E
         
         System.out.println(s); // [A, D, S, T, X]
         System.out.println(s.first()); // A
