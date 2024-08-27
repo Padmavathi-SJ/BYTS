@@ -13,6 +13,7 @@
   ## SortedSet
   ## TreeSet
   ## Map(I)
+  ## HashMap(I)
   
 
 ### Array:
