@@ -524,3 +524,24 @@ class Test{
 }
 }
 ```
+
+
+## Map(I):
+
+* If we wants represent the objects in the form of "key-value" pairs, we got to c concept called "Map".
+* Duplicates are not allowed for keys, but for values allowed.
+* In map , each key-value pair is called as "Entry object". so the Map is nothing but a group of entries.
+* Without existing Map Interface, there is no chance of existing Entry Interface , This is why java people declared the Entry Interface insidethe Map Interface.
+
+  ```
+  interface Map {
+  ---
+  ---
+  ---
+  interface Entry{
+  getKey()
+  getValue()
+  setValue(Object newValue)
+  }
+  }
+  ```
