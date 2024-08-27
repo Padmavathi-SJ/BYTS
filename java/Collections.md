@@ -373,3 +373,19 @@ class Test{
     }
 }
 ```
+
+## Set(I):
+
+* set is the child of Collection Interface.
+* We cannot create objects for Interfaces and abstract classes.
+
+* null in sorting --> null pointer exception
+* We cannot sort heterogeneous elements, because we cannot compare those elements
+
+## HashSet:
+
+* Underlying data structure is hashtable.
+* Duplicate elements are not allowed. If we try to add duplicate elements that add() method just returns false.
+* Insertion order won't be preserved , because it is based on "hashcode" of the objects.
+* Heterogeneous elementsare allowed.
+* Null insertion is possible, but only once.
