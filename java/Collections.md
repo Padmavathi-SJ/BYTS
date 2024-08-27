@@ -190,7 +190,7 @@ class Test{
   * immutable(unmodifiable)---> We cannot modify
  
   **Ex:**
-  ```
+```
   import java.util.*;
 class Test{
     public static void main(String[] args){
@@ -213,5 +213,14 @@ List ul=Collection.unmodifiableList(l);
 }
 }
 ```
+
+* Collection utility classes can also defines below methods to make a Set and Map as unmodifiable.
+* 
+**Ex:**
+  ```
+  Set ss=Collections.unmodifiableSet(s);
+  Map mm=Collections.unmodifiableMap(m);
+  ```
+
 
     
