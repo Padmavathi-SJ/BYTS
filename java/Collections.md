@@ -561,3 +561,23 @@ class Test{
   * set keySet()
   * set entrySet()
   * collection values()
+
+
+## HashMap(I):
+
+* Ds- hashtable.
+* duplicate are not allowed for keys but for values allowed.
+* Heterogeneous elements are allowed for both keys and values.
+* Null insertion is possible for keys but only once, but for values no restrictions.
+* Insertion order won't be preserved, based on hashcode of the objects.
+
+```
+HashMap m=new HashMap();
+```
+* Default initial capacity is  -16 and fillRatio is -0.75.
+
+```
+HashMap m=new HashMap(int initialCapacity);
+HashMap m=new HashMap(int initialCapacity, float fillRatio);
+HashMap m=new HashMap(Map m);
+```
