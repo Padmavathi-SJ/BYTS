@@ -224,4 +224,14 @@ List ul=Collection.unmodifiableList(l);
 * ArrayList is the best choice for our frequent requirement is "retrievel".
 * ArrayList is the worst choice if our frequent requirement is addition or deletion of the particular objects at the beginning or middle. Becaulse, it requires many swap operations.
 
-    
+
+## LinkedList(I):
+
+* Underlying data structure is "doubly LinkedList".
+* Duplicates are allowd
+* Heterogeneous elements are allowed.
+* Insertion order will be preserved.
+* Null insertion is possible.
+* LinkedList does not implements "RandomAccess".
+* LinkedList is the best choice for our frequent requirement is "addition or deletion".
+* LinkedList is the worst choice for our frequent requirement is "Retrievel".
