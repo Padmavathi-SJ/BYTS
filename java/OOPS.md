@@ -21,7 +21,7 @@
 ## 1. Class:
 
 * A logical representation of Object is nothing but Class
-* 
+  
 **EX:**
 ```
 class Student {
@@ -32,8 +32,8 @@ String name;
 
 ## 2. Object:
 
-* 1. An instance of class is nothing but an object.
-* 2. If we have a class, we can create any number of objects for that class based on our requirement.
+* An instance of class is nothing but an object.
+* If we have a class, we can create any number of objects for that class based on our requirement.
 
 **Ex:**
 ```
@@ -58,9 +58,9 @@ System.out.println(s2.id + "...." + s2.name);
 
 ## 3. Data Hiding:
 
-* 1. Data hiding is the process of hiding the data from the direct access.
-* 2. By this we can achieve security.
-* 3. By using private modifier we can achieve data hiding.
+* Data hiding is the process of hiding the data from the direct access.
+* By this we can achieve security.
+* By using private modifier we can achieve data hiding.
 
 **Ex:**
 ```
@@ -83,14 +83,14 @@ class Test{
 
 ## 4. Abstraction:
 
-* 1.The process of Highlighting the required services by hiding the implementaion is called Abstraction.
-* 2. By using abstract classes and references , we can achieve Abstraction.
-* 3. We can achieve security as we are not highlighting the internal implementation.
-* 4. Enhancement will be increased.
-* 5. Changes or any other big corrections is very easy that can be done in any other side.
-* 6. Modularity and maintainability of the application.
-* 7. They will give only services not the implementation part.
-* 8. They will give method like getFlights(), this is nothing but a service only.
+* The process of Highlighting the required services by hiding the implementaion is called Abstraction.
+* By using abstract classes and references , we can achieve Abstraction.
+* We can achieve security as we are not highlighting the internal implementation.
+* Enhancement will be increased.
+* Changes or any other big corrections is very easy that can be done in any other side.
+* Modularity and maintainability of the application.
+* They will give only services not the implementation part.
+* They will give method like getFlights(), this is nothing but a service only.
 
 
 ## 5. Encapsulation:
