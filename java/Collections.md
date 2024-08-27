@@ -1,4 +1,6 @@
   # Collection Framework
+      1. Array
+      2. Collection
 
   ## Array:
   
@@ -41,5 +43,7 @@
      * Iterator iterator()
        
 * There is no class which directly implements collection interface.
-* There is no getter method to re
+* There is no getter method to retrieve an object from the Collection from Collection Inetrface.
+
+  
    
