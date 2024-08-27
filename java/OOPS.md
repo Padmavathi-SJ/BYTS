@@ -694,6 +694,19 @@ output:
       1608446010
 ```
 
+## 13. Constructor:
+
+* If we are creating object for a class, mut perfrom initialization for that object, then only it will behave properly. For this purpose we will use constructors.
+* Name of the constructor must be same as the class name.
+* Return type concept is not applicable for constructors, not even void.
+* If we will use return type, it will treaded as a method.
+
+* We should use only 4 access modifiers for the Constructors.
+     1. private
+     2. public
+     3. protected
+     4. default
+* I we will any other modifiers except above, then we will get CE:modifier not allowed.
 ## 14. TypeCasting:
 
 **Typecasting in java is the process of converting a variable from one data type to another data type.**
