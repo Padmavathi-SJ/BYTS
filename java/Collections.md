@@ -117,3 +117,7 @@ class Test{
     }
 }
 ```
+
+* Usually we use Collection concept to hold and transfer the data from one application to another application across network. To provide support for this requirement, every collection class implements "Serializable Interface".
+* ArrayList class also implements "Cloneable Interface" , so that we can get "duplicate object creation capability" for our ArrayList class.
+* ArrayList and Vector classes implements "Random Access" , so that we can retrieve any element "randomly" at the same retrivel time.
