@@ -350,3 +350,26 @@ class Test{
   * peek();
   * empty();
   * search(Object obj);
+
+**Ex:**
+```
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Stack s=new Stack();
+        
+        System.out.println(s.empty()); //true
+        
+        s.push("S");
+        s.push("P");
+        s.push(100);
+        s.push("A");
+        
+        System.out.println(s); //[S,P,100,A]
+        System.out.println(s.search("P")); // 3
+        System.out.println(s.search("X")); // -1
+        System.out.println(s.peek()); // A
+        System.out.println(s.empty()); false
+    }
+}
+```
