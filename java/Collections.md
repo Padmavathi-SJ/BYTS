@@ -28,4 +28,18 @@
 
   ### Important methods:
      * add(Object obj)
-                
+     * addAll(Collection c)
+     * remove(Object obj)
+     * removeAll(Collection c)
+     * retainAll(Collection c)
+     * contains(Object obj)
+     * containsAll(Collection c)
+     * clear()
+     * isEmpty()
+     * size()
+     * Object[] toArray[]
+     * Iterator iterator()
+       
+* There is no class which directly implements collection interface.
+* There is no getter method to re
+   
