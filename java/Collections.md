@@ -235,3 +235,9 @@ List ul=Collection.unmodifiableList(l);
 * LinkedList does not implements "RandomAccess".
 * LinkedList is the best choice for our frequent requirement is "addition or deletion".
 * LinkedList is the worst choice for our frequent requirement is "Retrievel".
+
+**Ex:**
+```
+List l=new LinkedList();
+List l=new LinkedList(Collection c);
+```
