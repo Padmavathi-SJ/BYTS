@@ -123,8 +123,8 @@ class Test{
 * ArrayList and Vector classes implements "Random Access" , so that we can retrieve any element "randomly" at the same retrivel time.
 
   **Ex:**
-  ```
-  import java.util.*;
+```
+import java.util.*;
 import java.util.RandomAccess;
 import java.io.Serializable;
 
@@ -143,6 +143,7 @@ class Test{
 * But LinkedList does not implement RandomAccess.
 
 **Ex:**
+
 ```
 import java.util.*;
 import java.util.RandomAccess;
