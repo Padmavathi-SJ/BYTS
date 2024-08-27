@@ -47,5 +47,9 @@
 * There is no class which directly implements collection interface.
 * There is no getter method to retrieve an object from the Collection from Collection Inetrface.
 
-  
-   
+
+## List(Interface):
+
+* If we wants to represent a group of individual objects as a single object, where "duplicates" are allowed, and insertion order must be "preserved" we should go to that concept called "List".
+
+### Important methods
