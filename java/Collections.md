@@ -485,3 +485,21 @@ class Test{
 }
 }
 ```
+
+
+## TreeSet:
+
+* Data structure - balanced Tree.
+* heterogeneous elements are not allowed , O/w--> CE: CCE
+* duplicate are allowed.
+* null insertion is not possible , O/W--> CE: NPE
+* Insertion order won't preserved, based on sorting order.
+
+  ```
+  TreeSet s=new TreeSet();
+  --->meant for Default Natural Sorting Order (DNSO)
+  TreeSet s=new TreeSet(Comparator());
+  ---> meant for custom sorting order (CSO)
+  ```
+**Ex:**
+```
