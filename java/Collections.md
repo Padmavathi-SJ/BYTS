@@ -64,3 +64,56 @@
     * ListIterator listIterator()
 
 
+## ArrayList(I):
+
+* Underlying data struture is autogrowable array or Resizable array or Dynamic array.
+* Duplicates are allowed.
+* Insertion order will be preserved.
+* Heterogeneous elements are allowed. (only in TreeMap & TreeSet concepts heterogeneous elements are not allowed)
+* Null insertion is possible
+
+### Constructors:
+```
+ArrayList l=new ArrayList();
+or
+List l=new ArrayList();
+```
+
+* the above code will create an empty array list with "default initial capacity 10". by the following formula.
+  ```
+  newCapacity=oldCapacity + (oldCapacity >> 1);
+  ```
+```
+ArrayList l=new ArrayList(int initialCapacity);
+
+Ex:
+ArrayList l=new ArrayList(1000);
+ArrayList l=new ArrayList(Collection c);
+```
+
+**Ex:**
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        List l = new ArrayList();
+        
+        l.add("Padmavathi"); 
+        l.add(5);
+        l.add("Kavitha");
+        l.add(true);
+        l.add(2);
+        l.add("Mummy");
+        l.add(null);
+        
+        System.out.println(l); //[Padmavathi, 5, Kavitha, true, 2, Mummy, null]
+        
+        l.remove(3);
+        System.out.println(l);  //[Padmavathi, 5, Kavitha, 2, Mummy, null]
+        
+        l.remove(Integer.valueOf(3));
+        System.out.println(l);  //[Padmavathi, 5, Kavitha, 2, Mummy, null]
+    }
+}
+```
