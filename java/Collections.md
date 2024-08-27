@@ -201,5 +201,17 @@ class Test{
     }
 }
 ```
+* We can make unmodifiable by using unmodifiable() method of Collection utility classes.
+
+**Ex:**
+```
+import java.util.*;
+class Test{
+public static void main(String[] args){
+List l=new ArrayList();
+List ul=Collection.unmodifiableList(l);
+}
+}
+```
 
     
