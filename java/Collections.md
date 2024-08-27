@@ -424,3 +424,20 @@ class Test{
 * In hashSet insertion order is not preserved(based on hashcode), but in LinkedHashSet, insertion order is preserved.
 
 **Ex:**
+```
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Set s=new LinkedHashSet();
+        
+        s.add("S");
+        s.add(100);
+        s.add("P");
+        s.add(null);
+        s.add(10.5);
+        s.add(null); //null insertion is possible but only once.
+        System.out.println(s.add("P")); // false, because duplicate elements are not allowed
+        System.out.println(s); //[S, 100, P, null, 10.5]
+}
+}
+```
