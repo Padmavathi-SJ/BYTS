@@ -20,5 +20,12 @@
 * Collections are internally implemented by data structures, so we can expect ready made support.
 * If we wants to represent a group of individual objects as a single onject, we got ot a concept called "Collection object".
 
-  
+
+## Collections:
+
+* If we wants to represent a group of individual objects as a single onject, we got ot a concept called "Collection object".
+* Collections interfacs acts as a parent for all collection classe.
+
+  ### Important methods:
+     * add(Object obj)
                 
