@@ -581,3 +581,48 @@ HashMap m=new HashMap(int initialCapacity);
 HashMap m=new HashMap(int initialCapacity, float fillRatio);
 HashMap m=new HashMap(Map m);
 ```
+
+```
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Map<String, Integer> m=new HashMap<>();
+        
+        m.put("Vijay", 100);
+        m.put("Ajith", 400);
+        m.put("Adharva", 200);
+        m.put("Surya", 300);
+        
+        System.out.println(m.put("Ajith", 1000)); // 400
+        
+        System.out.println(m); // [Adharva=200, Surya=300, Ajith=400, Vijay=100]
+        
+        Set<String> keys=m.keySet();
+        System.out.println(keys); // [Adharva, Surya, Ajith, Vijay]
+        
+        Collection<Integer> values=m.values();
+        System.out.println(values); // [200,300,1000,100]
+        
+        Set <Map.Entry<String, Integer>> entries=m.entrySet();
+        System.out.println(entries); // [Adharva=200, Surya=300, Ajith=1000, Vijay=100]
+        
+        Iterator <Map.Entry<String, Integer>> itr=entries.iterator();
+        
+        while(itr.hasNext()) {
+            Map.Entry<String, Integer> e=itr.next();
+            
+            System.out.println(e.getKey() + "....." + e.getValue());
+            // Adharva...200
+            // Surya....300
+            // Ajith....1000
+            // Vijay....100
+            
+            if(e.getKey().equals("Surya")){
+                e.setValue(700);
+            }
+        }
+        
+        System.out.println(m); // [Adharva=200, Surya=700, Ajith=1000, Vijay=100]
+}
+}
+```
