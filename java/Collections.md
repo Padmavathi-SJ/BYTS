@@ -159,3 +159,33 @@ class Test{
     }
 }
 ```
+### Difference between ArrayList and Vecot:
+
+### ArrayList:
+* Methods present in ArrayList are not synchronized by default.
+* Multiple thread are allowed to operate an object at the same time.
+* So It is not thread safe.
+* Relatively Performance is high.
+
+### Vector:
+* Methods present in Vector are Synchronized by default.
+* Only one thread is allowed to operate an object at the same.
+* So It is thread safe.
+* Relatively performance is low.
+
+* By default ArrayList is not thread safe, but we can get thread safe ArrayList by using "synchronizedList() method of Colliction utility class.
+
+  ```
+  List l=new ArrayList();
+  List sl=new synchronizedList(l);
+  ```
+
+* Collection utility class also difines the below methods to get "thread-safe Set & Map".
+  ```
+  public static Set synchronizedSet(Set s);
+  public static Map synchronizedMap(Map m);
+  ```
+
+  * mutable---> We can modify
+  * immutable(unmodifiable)---> We cannot modify
+    
