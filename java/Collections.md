@@ -279,3 +279,38 @@ class Test{
 }
 ```
 
+
+## Vector(I):
+
+* Underlying data structure is growable array.
+* Duplicates are allowed.
+* Heterogeneous elements are allowed.
+* Insertion order will be preserved.
+* Null insertion is possible.
+* The methods present in Vector are "syncgronized by default" so it is "thread-safe".
+
+```
+Vecctor v=new Vector();
+```
+* It creates an empty vector object with the default initial capacity 10. Once it reaches its maximum capacity, then it will be increased by using the below formula.
+
+  ```
+  newCapacity=oldCapacity * 2;
+  ```
+
+  ```
+  Vector v=new Vector(int initialCapacity);
+  Vector v=new Vector(int initialCapacity, int incrementalCapacity);
+  Vectro v=new Vector(Collection c);
+  ```
+  ### Important Methods:
+   * addElement(Object obj);
+   * removeElement(Object obj);
+   * removeElementAt(int index);
+   * removeAllElements();
+   * elementAt(int index);
+   * firstElement();
+   * lastElement();
+   * int size();
+   * boolean isEmpty();
+   * enumeration elements();
