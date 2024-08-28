@@ -682,6 +682,7 @@ class Test{
 ## SortedMap(I):
 
 * If we wants to represent the objects in the form of key-value pairs according to some sorting order, we go to a concept called "SortedMap".
+* Insertion order is preserved.
 
 ### Important Methdos:
   * firstKey();
@@ -691,3 +692,28 @@ class Test{
   * subMap(Object obj, Object obj);
   * comparator();
 
+**Ex:**
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        SortedMap<String, Integer> m=new TreeMap<>();
+        
+        m.put("Vijay", 100);
+        m.put("Ajith", 400);
+        m.put("Adharva", 200);
+        m.put("Surya", 300);
+        m.put("Charan", 500);
+        
+        System.out.println(m); //[Adharva=200, Ajith=400, Charan=500, Surya=300, Vijay=100]
+        System.out.println(m.firstKey()); //Adharva
+        System.out.println(m.lastKey()); //Vijay
+        System.out.println(m.headMap("Charan")); //[Adharav=200, Ajith=400] < Charan
+        System.out.println(m.tailMap("Charan")); //[Charan=500 Surya=300, Vijay=100] >=Charan
+        System.out.println(m.subMap("Adharva", "Charan")); //[Adharva=200, Ajith=400] >=Adharva < Charan
+        System.out.println(m.comparator()); //null
+        
+    }
+}
+```
