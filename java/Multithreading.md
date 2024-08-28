@@ -6,7 +6,10 @@
 ## Inter-Thread Communication
 
 
+## what is Thread:
+ * A thread is java is a lightweight, independent path of execution , that allows multiple tasks to run concurrently.
 
+   
 ## Defining Thread class:
 
 * We can define a thread in 2 ways.
