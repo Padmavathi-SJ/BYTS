@@ -44,4 +44,29 @@ class Test{
 }
 ```
 * here, we cannot expect the exact output, because multiple threads are running at the same time or simultaneously.
-* 
+
+### By implementing Runnable Interfaces:
+
+**Ex:**
+
+```
+class SrikanthThread implements Runnable {
+    public void run() {
+        for(int i=1; i<=4; i++){
+            System.out.println("Shruthi thread: " + Thread.currentThread().getName());
+        }
+    }
+}
+
+class Test {
+    public static void main(String[] args){
+     Runnable r=new SrikanthThread();
+     Thread t=new Thread(r);
+     t.start();
+     for(int i=1; i<=4; i++){
+         System.out.println("Main Thread: " + Thread.currentThread().getName());
+     }
+    }
+}
+```
+* Here also we cannot expect the axact output.
