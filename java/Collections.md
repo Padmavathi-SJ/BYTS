@@ -797,3 +797,14 @@ class Test{
     }
 }
 ```
+
+
+## Queue(I):
+
+* Queue is the child of Collection Interface.
+* If we wants to represent the objects "prior to processing" , we got to a concept called "Queue".
+* Usually Queue follows "First In First Out" order.but we can define our own Priorities based on our requirement(Priority Queue).
+* LinkedList implements Queue is always follows "FIFO".
+
+
+*  
