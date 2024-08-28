@@ -733,3 +733,29 @@ TreeMap tm=new TreeMap();
 TreeMap tm=new TreeMap(comparator());
   ---> meant for"Custom Sorting Order", so keys need not be homogeneous and comparable.
 ```
+
+**Ex:**
+
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        SortedMap<String, Integer> m=new TreeMap<>(new CC());
+        
+        m.put("Vijay", 100);
+        m.put("Ajith", 400);
+        m.put("Adharva", 200);
+        m.put("Surya", 300);
+        m.put("Charan", 500);
+        
+        System.out.println(m); // [Vijay=100, Surya=300, Charan=500, Ajith=400, Adharva=200]
+    }
+}
+
+class CC implements Comparator<String> {
+    public int compare(String s1, String s2) {
+        return s2.compareTo(s1);
+    }
+}
+```
