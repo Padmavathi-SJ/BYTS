@@ -18,6 +18,7 @@
   ## SortedMap(I)
   ## TreeMap
   ## Queue(I)
+  ## PriorityQueue
   
 
 ### Array:
