@@ -652,3 +652,11 @@ public static Map synchronizedMap(Map m);
 Map m=new HashMap();
 Map sm=Collections.synchronizedMap(m);
 ```
+
+
+## LinkedHashMap:
+
+* LinkedHashMap is exactly same as HashSet except the following differences.
+* Underlying data structrue is LInkedList + HashTable.
+* In HashSet insertion order is not preserved.
+* But in LinkedHashSet, insertion order is preserved.
