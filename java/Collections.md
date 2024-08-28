@@ -15,6 +15,7 @@
   ## Map(I)
   ## HashMap(I)
   ## LinkedHashMap
+  ## SortedMap(I)
   
 
 ### Array:
