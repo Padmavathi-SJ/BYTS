@@ -775,3 +775,24 @@ HashTable h=new HashTable(int initialCapacity);
 HashTable h=new HashTable(int initialCapacity, float fillRatio);
 HashTable h=new HashTable(h);
 ```
+
+**Ex:**
+
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        Map m=new Hashtable();
+        
+        m.put("Vijay", 100);
+        m.put(400, "Ajith");
+        m.put("Adharva", 200);
+        m.put(300, "Surya");
+        m.put("Charan", 500);
+        //m.put(null,"x"); //NPE
+        
+        System.out.println(m); //[Adharva=200, Charan=500, Vijay=100, 400=Ajith, 300=Surya]
+    }
+}
+```
