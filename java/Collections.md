@@ -644,3 +644,10 @@ class Test{
  * Comparing to HashMap , performance is low.
  * Null insertion is not possible for both keys and values.
 
+* By default HashMap is not tyhread-safe, so we can get thread-safe HashMap by using "SynchronizedMap()" method of Collection utility classes.
+
+```
+public static Map synchronizedMap(Map m);
+Map m=new HashMap();
+Map sm=Collections.synchronizedMap(m);
+```
