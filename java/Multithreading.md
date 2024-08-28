@@ -1,6 +1,7 @@
 # Multithreading:
 
 ## 01. Defining Thread class
+## join()
 
 
 
@@ -70,3 +71,15 @@ class Test {
 }
 ```
 * Here also we cannot expect the axact output.
+
+
+## join():
+
+* If a Thread wants to wait untill the completion of some other particular thread execution, we go for join() method.
+
+```
+public void join() throws InterruptedException
+public void join(long ms) throws InterruptedException
+public void join(long ms int ns) throws InterruptedException
+```
+ 
