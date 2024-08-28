@@ -660,3 +660,20 @@ Map sm=Collections.synchronizedMap(m);
 * Underlying data structrue is LInkedList + HashTable.
 * In HashSet insertion order is not preserved.
 * But in LinkedHashSet, insertion order is preserved.
+
+**Ex:**
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        HashMap<String, Integer> m=new LinkedHashMap<>();
+        
+        m.put("Vijay", 100);
+        m.put("Ajith", 400);
+        m.put("Adharva", 200);
+        m.put("Surya", 300);
+        System.out.println(m);// [Vijay=100, Ajith=400, Adharva=200, Surya=300] because in LinkedHashMap insertion order is preserved.
+    }
+}
+```
