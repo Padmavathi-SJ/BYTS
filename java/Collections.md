@@ -868,3 +868,32 @@ class Test{
     }
 }
 ```
+* The above program is "Default PriorityQueue".
+  
+**Ex:**
+
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        Queue<Integer> q=new PriorityQueue<>(new CC());
+        
+        for(int i=10; i>=1; i--){
+            q.offer(i);
+        }
+        System.out.println(q); //[10,9,8,7,6,5,4,3,2,1]
+        q.remove();
+        q.remove();
+        q.remove();
+        System.out.println(q); //[7,6,5,3,1,2,4]
+    }
+}
+
+class CC implements Comparator<Integer> {
+    public int compare(Integer i1, Integer i2){
+        return i2.compareTo(i1);
+    }
+}
+```
+* The above program is Custom PriorityQueue.
