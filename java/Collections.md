@@ -845,3 +845,26 @@ class Test{
 PriorityQueue q =new PriorityQueue(); -->DNSO
 PriorityQueue q =new PriorityQueue(comparator()); -->CSO
 ```
+
+**Ex:**
+
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        Queue<Integer> q=new PriorityQueue<>();
+        
+        for(int i=10; i>=1; i--){
+            q.offer(i);
+        }
+        System.out.println(q); //[1,2,5,4,3,9,6,10,7,8]
+        q.poll();
+        q.remove();
+        q.remove();
+        q.remove();
+        q.remove();
+        System.out.println(q); //[6,7,9,10,8]
+    }
+}
+```
