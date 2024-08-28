@@ -833,3 +833,14 @@ class Test{
     }
 }
 ```
+
+
+## Priority Queue:
+
+* If we wants to represent a group of objects prior to processing according to some prioritieswe got to a concept called "Priority Queue".
+* Here, this priorityQueue ca be either "default priority queue" or "Custom Priority Queue".
+
+```
+PriorityQueue q =new PriorityQueue(); -->DNSO
+PriorityQueue q =new PriorityQueue(comparator()); -->CSO
+```
