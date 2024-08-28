@@ -124,4 +124,10 @@ public static void sleep(long ms) throws InterruptedException
 public static void sleep(long ms, int ns) throws InterruptedException
 ```
 
+
+## Inter-Thread Communication:
+
+* Two threads can communicate with each other by using wait() and notify() methdos.
+* A thread , which is expection updates from another thread has to call "wait()" method and enter into waiting state.
+* A thread, which is giving updates informations has to call "notify()" and "notifyAll()" method, so that waiting thread will get the notification and continues its executions by taking those updates.
   
