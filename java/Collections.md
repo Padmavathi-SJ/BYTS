@@ -812,3 +812,24 @@ class Test{
   * remove() -->remove and return the head element of the queue, if the queue is empty it throws "NoSuchElementException".
   * peek() --> returns the head element of the queue without removal, if the queue is empty, it returns null.
   * element() --> returns the head element of the queue without removal, if the queue is empty , it throws "NoSuchElementException".
+
+**Ex:**
+
+```
+import java.util.*;
+
+class Test{
+    public static void main(String[] args){
+        Queue<String> q=new LinkedList<>();
+        for(int i=0; i<10; i++){
+            q.offer("X" + i);
+        }
+        
+        System.out.println(q); //[X0,X1,X2,X3,X4,X5,X6,X7,X8,X9]
+        System.out.println(q.poll()); //X0
+        System.out.println(q); //[X1,X2,X3,X4,X5,X6,X7,X8,X9]
+        System.out.println(q.peek()); // X1 It wont remove but returns
+        System.out.println(q); //[X1,X2,X3,X4,X5,X6,X7,X8,X9]
+    }
+}
+```
