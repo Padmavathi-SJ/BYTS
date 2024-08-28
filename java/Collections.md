@@ -626,3 +626,21 @@ class Test{
 }
 }
 ```
+
+* HashMap(I) implements both serializable and clonable interfaces, but no implements RandomAccess.
+
+### Difference between HashMap and HashTable:
+### HashMap:
+ * Methods present in HashMap not synchronized by default.
+ * Multiple threads are allowed to operate an hashMap  object at the same time.
+ * So this is not-thread safe.
+ * Null insertion is possible.
+ * comparing to Hashtable , performance is hight.
+
+### HashTable:
+ * Methods present in hashTable rae synchronized by default.
+ * Only one thread is allowed to opearate hashTable object at the same time.
+ * So this is thread-safe.
+ * Comparing to HashMap , performance is low.
+ * Null insertion is not possible for both keys and values.
+
