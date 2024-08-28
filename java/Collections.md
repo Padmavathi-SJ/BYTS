@@ -806,5 +806,9 @@ class Test{
 * Usually Queue follows "First In First Out" order.but we can define our own Priorities based on our requirement(Priority Queue).
 * LinkedList implements Queue is always follows "FIFO".
 
-
-*  
+### Imprtant Methods:
+  * Offer(Object obj) --> add an object to the queue.
+  * poll() --> remove and returns the head element of the queue, if the queue is empty it return "null".
+  * remove() -->remove and return the head element of the queue, if the queue is empty it throws "NoSuchElementException".
+  * peek() --> returns the head element of the queue without removal, if the queue is empty, it returns null.
+  * element() --> returns the head element of the queue without removal, if the queue is empty , it throws "NoSuchElementException".
