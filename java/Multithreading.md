@@ -82,4 +82,35 @@ public void join() throws InterruptedException
 public void join(long ms) throws InterruptedException
 public void join(long ms int ns) throws InterruptedException
 ```
- 
+**Ex:**
+
+```
+class ST extends Thread {
+    public void run() {
+        for(int i=1; i<=4; i++){
+            System.out.println("Child Thread");
+        }
+        try {
+            Thread.sleep(2000);
+        }
+        catch(InterruptedException e){
+            
+        }
+    }
+}
+
+class Test {
+    public static void main(String[] args) throws InterruptedException{
+        Thread t=new ST();
+        t.start();
+        t.join();
+        for(int i=1; i<=4; i++){
+            System.out.println("Main Thread");
+        }
+    }
+}
+```
+
+* here, in the above program child class execution will be completed first as the main thread is calling join() method on child thread object.
+
+  
