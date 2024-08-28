@@ -718,3 +718,11 @@ class Test{
     }
 }
 ```
+
+## TreeMap:
+
+* Underlying data structrue is Red black Tree.
+* duplicates are not allowed for keys, but for values allowed.
+* Insertion order won't be preserved , it is based on sorting order of the keys.
+* Heterogeneous elements are not allowed for keys, O/W we will get CCE, but for values allowed.
+* Null insertion is not possible for keys, O/W we will get NPE, but for values allowed.
