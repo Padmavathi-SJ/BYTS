@@ -2,7 +2,7 @@
 
 ## 01. Defining Thread class
 ## join()
-
+## sleep()
 
 
 
@@ -112,5 +112,15 @@ class Test {
 ```
 
 * here, in the above program child class execution will be completed first as the main thread is calling join() method on child thread object.
+
+
+## sleep():
+
+* If a thread does not want to perform any task for a particular amount of time, we should go for sleep() method.
+
+```
+public static void sleep(long ms) throws InterruptedException
+public static void sleep(long ms, int ns) throws InterruptedException
+```
 
   
