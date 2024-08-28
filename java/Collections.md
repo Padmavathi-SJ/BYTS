@@ -726,3 +726,10 @@ class Test{
 * Insertion order won't be preserved , it is based on sorting order of the keys.
 * Heterogeneous elements are not allowed for keys, O/W we will get CCE, but for values allowed.
 * Null insertion is not possible for keys, O/W we will get NPE, but for values allowed.
+
+```
+TreeMap tm=new TreeMap();
+  ---> meant for "Default Natural Sorting Order", so keys must be homogeneous and comparable.
+TreeMap tm=new TreeMap(comparator());
+  ---> meant for"Custom Sorting Order", so keys need not be homogeneous and comparable.
+```
