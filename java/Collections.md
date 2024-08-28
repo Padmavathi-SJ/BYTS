@@ -759,3 +759,19 @@ class CC implements Comparator<String> {
     }
 }
 ```
+
+## Hashtable:
+
+* Underlying data structure is HashTable.
+* Duplicates are not allowed fir keys, but for values allowed.
+* Heterogeneous elements are allowed for both keys and values.
+* Null insertion is not possible for both keys and values.
+* Insertion order won't be preserved, it is based on hashCode of the keys.
+
+```
+HashTale h=new HashTable();
+  --> It create an empty hashTable object with default initial capacity 11 and fillRation 0.75.
+HashTable h=new HashTable(int initialCapacity);
+HashTable h=new HashTable(int initialCapacity, float fillRatio);
+HashTable h=new HashTable(h);
+```
