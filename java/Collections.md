@@ -678,3 +678,16 @@ class Test{
     }
 }
 ```
+
+## SortedMap(I):
+
+* If we wants to represent the objects in the form of key-value pairs according to some sorting order, we go to a concept called "SortedMap".
+
+### Important Methdos:
+  * firstKey();
+  * lastKay();
+  * headMap(Object obj);
+  * tailMap(Object obj);
+  * subMap(Object obj, Object obj);
+  * comparator();
+
