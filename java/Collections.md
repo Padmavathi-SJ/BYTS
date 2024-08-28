@@ -14,6 +14,7 @@
   ## TreeSet
   ## Map(I)
   ## HashMap(I)
+  ## LinkedHashMap
   
 
 ### Array:
