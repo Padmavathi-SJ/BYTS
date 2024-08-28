@@ -17,6 +17,7 @@
   ## LinkedHashMap
   ## SortedMap(I)
   ## TreeMap
+  ## Queue(I)
   
 
 ### Array:
