@@ -35,7 +35,9 @@ int main() {
     int a=10;
     int* p=&a;
     printf("%d\n", a); //10
-    printf("%d", p); //1542941612
+    printf("%d", p); //1542941612 not exact
+    printf("%x", p); //795d611c it will give in a hexadecimal form
+    printf("%x", &p); //3e128bace128bb0 address of p
     return 0;
 }
 ```
