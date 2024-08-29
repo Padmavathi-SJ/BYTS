@@ -175,7 +175,7 @@ class Test{
     }
 }
 ```
-### Difference between ArrayList and Vecot:
+### Difference between ArrayList and Vector:
 
 ### ArrayList:
 * Methods present in ArrayList are not synchronized by default.
