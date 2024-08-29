@@ -35,9 +35,24 @@ int main() {
     int a=10;
     int* p=&a;
     printf("%d\n", a); //10
+    printf("%d\n", *p); //10
     printf("%d", p); //1542941612 not exact
     printf("%x", p); //795d611c it will give in a hexadecimal form
     printf("%x", &p); //3e128bace128bb0 address of p
+    return 0;
+}
+```
+
+## Double Pointer:
+* A pointer is storing the address of another pointer is called "double pointer".
+```
+#include<stdio.h>
+int main() {
+    int a=10;
+    int* p=&a;
+    int** q=&p;
+    printf("%d\n", p); //-405204332
+    printf("%d", q); //-405204328 //here q is a double pointer. q is holding the address of p.
     return 0;
 }
 ```
