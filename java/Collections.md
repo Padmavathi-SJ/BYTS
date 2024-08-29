@@ -295,6 +295,8 @@ class Test{
 
 ## Vector(I):
 
+*Vector in c++ is a dynamic array, that can automatically manage the size and memory allocation.
+
 * Underlying data structure is growable array.
 * Duplicates are allowed.
 * Heterogeneous elements are allowed.
