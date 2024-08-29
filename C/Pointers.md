@@ -87,3 +87,22 @@ int main() {
 * here in the above programs, 3 level pointer(***r) should store 2 level pointer(**q).
 * 2 level pointer(**q) should store 1 level pointer(*P).
 * 1 level pointer(*p) should store 0 level poiter or var(a).
+
+```
+#include<stdio.h>
+int main() {
+    int a=10;
+    int* p=&a;
+    int** q=&p;
+    int*** r=&q;
+    printf("%d\n", a); //10
+    printf("%d\n", *p); //10
+    printf("%d\n", *(*q)); //10
+    printf("%d\n", *(*(*r))); //10
+    **q=20;
+    printf("%d\n", a); //20
+    ***r=30;
+    printf("%d", a); //30
+    return 0;
+}
+```
