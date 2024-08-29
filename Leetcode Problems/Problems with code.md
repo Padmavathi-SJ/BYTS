@@ -93,6 +93,10 @@ class Solution {
 }
 ```
 
+* DFS - DFS uses stack data structure.
+* It will traverse from the root node to dead end of that node, if it reaches the dead end, then only it will backtrack to check the previous nodes adjavent nodes.
+  
+
 ### 42. Trapping Rain Water:
 
 **Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.**
