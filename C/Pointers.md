@@ -22,5 +22,7 @@ all the above are same in c language.
 int a=10;
 int* p;
 p=&a; //here p is holding the address of a var.
+
+* now, address of a is = 100, so p is holding 100, and p is also a var(pointer variable), it is also having a address in memory, so address of p is = 200.
 ```
 
