@@ -28,3 +28,14 @@ p=&a; //here p is holding the address of a var.
 * Now p is pointing a.
 ```
 
+**Ex:**
+```
+#include<stdio.h>
+int main() {
+    int a=10;
+    int* p=&a;
+    printf("%d\n", a); //10
+    printf("%d", p); //1542941612
+    return 0;
+}
+```
