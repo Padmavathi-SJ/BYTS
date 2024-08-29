@@ -44,7 +44,7 @@ class Solution{
         k=k%n;
         vector <int>res(n);
         for(int i=0; i<n; i++){
-            res[(i+k) % n] = nums[i];
+            res[(i+k) % n] = nums[i]; //will sift k positions to right for find the index 
         }
         nums=res;
     }
@@ -151,3 +151,15 @@ class Solution{
     }
 }
 ```
+## Dynamic Programming:
+
+* Dynamic programming used to break down the complex problem into simpler subproblems.
+* We can solve overlapping subbproblems to avoid redunt calculations(in a cmplex problem, some subproblems will coe multiple times, to avoid this we can use "memoization(Storing the results of function calls)" and tabulation(store the results in a table) to avoid the recalculations of same subproblems.
+* By this we can reduce time complexity of solving the subproblems.
+
+### Overlapping:
+* while solving a complex problem, some subproblems will be encountered multiple times,
+* to avoid this DP uses memoization and Tabulation.
+### Memoization:
+* while solving a complex problem, some subproblems will be encountered multiple times, by storing the results of sub problems in a table or array , so that are not recomputed. This is called memoization, when implemented "top-down"approach(recursive with caching).
+* Tabulation(storing the result of subproblems) when implemented bottom-up approach(iterative filling of a table).
