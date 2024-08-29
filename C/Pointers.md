@@ -106,3 +106,13 @@ int main() {
     return 0;
 }
 ```
+```
+#include<stdio.h>
+int main(){
+    int a=10;
+    int* p=&a;
+    printf("%d\n", p); //1643263372
+    printf("%d", p+5); //1643263392 because int will take 4 bytes in memory so 4*5=20 so 20bytes increased.
+    return 0;
+}
+```
