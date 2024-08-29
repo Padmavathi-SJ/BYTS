@@ -103,7 +103,7 @@ class Solution {
 ```
 
 * DFS - DFS uses stack data structure.
-* It will traverse from the root node to dead end of that node, if it reaches the dead end, then only it will backtrack to check the previous nodes adjavent nodes.
+* It will traverse from the root node to dead end of that node, if it reaches the dead end, then only it will backtrack to check the previous nodes or adjavent nodes.
 * DFS will explore as deeply as possible before backtracking to the adjacent node.
 
 * DFS is a recursive algorithm, implemented by using stack data structure, either implicitly or explicitly via recursion.
