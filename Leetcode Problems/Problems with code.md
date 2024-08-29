@@ -2,7 +2,7 @@
 * LinkedList
 * Dynamic Programming
 * DFS-Depth First Search
-* 
+
 
 
 
@@ -50,7 +50,7 @@ class Solution{
     public:
     void rotate(vector <int> &nums, int k){
         int n=nums.size();
-        k=k%n;
+        k=k%n; //To check, is it out of length of array or not?
         vector <int>res(n);
         for(int i=0; i<n; i++){
             res[(i+k) % n] = nums[i]; //will sift k positions to right for find the index 
