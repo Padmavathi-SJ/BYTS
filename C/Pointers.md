@@ -52,7 +52,20 @@ int main() {
     int* p=&a;
     int** q=&p;
     printf("%d\n", p); //-405204332
-    printf("%d", q); //-405204328 //here q is a double pointer. q is holding the address of p.
+    printf("%d", q); //-405204328 //here q is a double pointer or two level pointer. q is holding the address of p.
+    return 0;
+}
+```
+
+```
+#include<stdio.h>
+int main() {
+    int a=10;
+    int* p=&a;
+    int** q=&p;
+    printf("%d\n", a); //10
+    printf("%d\n", *p); //10
+    printf("%d", *(*q)); //10
     return 0;
 }
 ```
