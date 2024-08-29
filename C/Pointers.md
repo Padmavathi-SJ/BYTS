@@ -2,7 +2,8 @@
 
 * Pointers always contain the address of any other variable.
 * Pointers are derived data types.
-
+* & (address of) and * (indirection operator)
+  
 ### Decleration of pointer:
 ```
 datatType * pointerName;
