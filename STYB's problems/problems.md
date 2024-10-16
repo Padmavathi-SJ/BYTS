@@ -104,7 +104,9 @@ class Main{
 """
 ```
 
-### You are given a function,char*MoveHyphen(char str[],int n);Implement the function to move all hyphens(-) in the string to the front of the given string.NOTE: The function accepts a string “str” of length ‘n’, that contains alphabets and hyphens (-). Return null if str is null.
+### Move hyphens:
+
+* You are given a function,char*MoveHyphen(char str[],int n);Implement the function to move all hyphens(-) in the string to the front of the given string.NOTE: The function accepts a string “str” of length ‘n’, that contains alphabets and hyphens (-). Return null if str is null.
 
 ```
 Input 1: Move-Hyphens-to-Front
