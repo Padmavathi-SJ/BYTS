@@ -103,3 +103,48 @@ class Main{
 4 
 """
 ```
+
+### You are given a function,char*MoveHyphen(char str[],int n);Implement the function to move all hyphens(-) in the string to the front of the given string.NOTE: The function accepts a string “str” of length ‘n’, that contains alphabets and hyphens (-). Return null if str is null.
+
+```
+Input 1: Move-Hyphens-to-Front
+Output 1: ---MoveHyphenstoFront
+
+Explanation: The string “Move-Hyphens -to-front” has 3 hyphens (-), which are moved to the front of the string, this output is “---MoveHyphenstofront”
+
+Input 2:  String-Compare
+Output 2: -StringCompare
+
+//java
+
+import java.util.*;
+class Main{
+    public static String moveHypensFront(String str){
+        int l=str.length();
+        StringBuilder hyphenPart = new StringBuilder();
+        StringBuilder nonHyphenPart = new StringBuilder();
+        for(int i=0; i<l; i++){
+            char ch = str.charAt(i);
+            if(ch == '-'){
+                hyphenPart.append(ch);
+            }
+            else{
+                nonHyphenPart.append(ch);
+            }
+        }
+        return hyphenPart.toString() + nonHyphenPart.toString();
+    }
+    public static void main(String[] args){
+        Scanner input=new Scanner (System.in);
+        
+        String str=input.nextLine();
+        
+        System.out.println(moveHypensFront(str));
+        input.close();
+    }
+}
+"""
+pad-ma-va-thi
+---padmavathi
+"""
+```
