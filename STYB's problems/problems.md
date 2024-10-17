@@ -205,8 +205,9 @@ public class Main{
 
 ```
 
-###
-*Consider one string as input. You have to check that given strings with single backward and forward shift are same or not. If they are same then print 1 otherwise print 0.
+### 10. Rotate String:
+
+* Consider one string as input. You have to check that given strings with single backward and forward shift are same or not. If they are same then print 1 otherwise print 0.
 * Hint: -Backward Shift: A single circular rotation of the string in which the first character becomes the last character and all other characters are shifted one index to the left. For example, abcde becomes bcdea after one left shift.
 
 * Forward  Shift:  A single circular rotation of the string in which the last character becomes the first character and all other characters are shifted to the right. For example, abcde becomes eabcd after one right shift
