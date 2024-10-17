@@ -150,3 +150,57 @@ pad-ma-va-thi
 ---padmavathi
 """
 ```
+
+### 07. Add two numbers in the given base without converting into base
+```
+Input Format
+get two numbers and base
+Output Format
+display the sum
+Sample Input 1
+1010 11001 2
+Sample Output 1
+100011
+Sample Input 2
+123  13 4
+Sample Output 2
+202
+
+import java.util.*;
+public class Main{
+    public static String addTwoNums(String n1, String n2, int base){
+        while(n1.length() < n2.length()){
+            n1="0" + n1;
+        }
+        while(n1.length() > n2.length()){
+            n2="0" + n2;
+        }
+        StringBuilder res = new StringBuilder();
+        int sum=0;
+        int carry=0;
+        for(int i=n1.length()-1; i>=0; i--){
+            int digit1 = Character.getNumericValue(n1.charAt(i));
+            int digit2 = Character.getNumericValue(n2.charAt(i));
+            
+            sum = digit1+digit2+carry;
+            res.append(sum % base);
+            carry=sum/base;
+        }
+        if(carry > 0){
+            res.append(carry);
+        }
+        return res.reverse().toString();
+    }
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        
+        String n1=input.nextLine();
+        String n2=input.nextLine();
+        int base=input.nextInt();
+        
+        System.out.println(addTwoNums(n1, n2, base));
+        input.close();
+    }
+}
+
+```
