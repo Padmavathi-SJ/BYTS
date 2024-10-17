@@ -204,3 +204,73 @@ public class Main{
 }
 
 ```
+
+###
+*Consider one string as input. You have to check that given strings with single backward and forward shift are same or not. If they are same then print 1 otherwise print 0.
+* Hint: -Backward Shift: A single circular rotation of the string in which the first character becomes the last character and all other characters are shifted one index to the left. For example, abcde becomes bcdea after one left shift.
+
+* Forward  Shift:  A single circular rotation of the string in which the last character becomes the first character and all other characters are shifted to the right. For example, abcde becomes eabcd after one right shift
+ 
+* Input Format:  Candidate has to write the code to accept single string value for str without any additional message.
+
+* Output Format: Written program code should generate output as single integer value i.e. 0 or 1 which represent both forward and backward shift strings are equal or not.
+Additional message in output will cause to failure of test cases.
+
+* Constraints:
+String str should not allowed space, special character and numbers.
+String str should only in English language.
+
+```
+Examples:
+Examples -1:
+Input: 
+sfdlmnop
+Output: 
+0
+
+Examples - 2:
+Input: 
+mama     
+Output: 
+1
+
+Explanation:
+In first example, string is “sfdlmnop”. 
+Forward Shift:- fdlmnops
+Backward Shift:- psfdlmno
+Above both strings are not equal. So output is 0.
+
+In second example, string is “mama”.
+Forward Shift:- amam
+Backward Shift:- amam
+Above both strings are equal. So output is 1.
+
+
+import java.util.*;
+public class Main{
+    public static int compare(String str){
+        int len=str.length();
+        String forwardShift = str.substring(1) + str.charAt(0);
+        String backwardShift = str.charAt(len-1) + str.substring(0, len-1);
+        if(forwardShift.equals(backwardShift)){
+            return 1;
+        }
+        return 0;
+    }
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        
+        String str=input.nextLine();
+        
+       System.out.println(compare(str));
+        input.close();
+    }
+}
+"""
+mama
+1  //o/p
+
+sfdlmnop
+0  //o/p
+"""
+```
