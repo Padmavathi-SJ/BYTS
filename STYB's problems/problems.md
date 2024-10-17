@@ -331,3 +331,79 @@ p  //ch2
 paales //output
 """
 ```
+
+### 13. Frequent Character Replace
+* You are required to implement the following function: "char* FrequentCharacterReplaced (char* str, char x);" The function accept a string ‘str’ and a character ‘x’ as its argument.  you are required to find the most frequent character in string ‘str’ and replace it with character ‘x’  across the string and return the same
+* 
+* Note:
+- If frequency of two characters are same, we have to consider the character with lower ASCII value
+- Character 'x' lies in the range (a-z)
+- All characters in 'str' are in lowercase
+-  If 'str' is Null, then return NULL, In case of python, If ‘str’ is None, then return None
+
+```
+Example:
+Input:
+str :  bbadbbababb
+x: t
+
+Output:
+ttadttatatt
+
+Explanation:
+The most frequent character in string 'str' is 'b' and replacing 'b' with 't' will form string ‘ttadttatatt’, hence ’ttadttatatt’ is returned
+
+Sample Input
+str: jjkdkksjjdjf
+x: y
+
+Sample Output
+yykdkksyydyf
+
+//using java
+
+import java.util.*;
+public class Main{
+    public static String replaceChar(String str, char ch){
+        int len=str.length();
+        StringBuilder newStr = new StringBuilder();
+        for(int i=0; i<len; i++){
+            newStr.append(str.charAt(i));
+        }
+        int[] charCount = new int[256];
+        for(int i=0; i<len; i++){
+            charCount[str.charAt(i)]++;
+        }
+        char mostFrequentChar = str.charAt(0);
+        int maxCount=0;
+        for(int i=0; i<256; i++){
+            if(charCount[i] > maxCount){
+                maxCount = charCount[i];
+                mostFrequentChar = (char) i;
+            }
+        }
+        for(int i=0; i<len; i++){
+            if(newStr.charAt(i) == mostFrequentChar){
+                newStr.setCharAt(i, ch);
+            }
+        }       
+        return newStr.toString();
+        
+    }
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        
+        String str=input.nextLine();
+        char ch=input.next().charAt(0);
+        
+        System.out.print(replaceChar(str, ch));
+        input.close();
+    }
+}
+"""
+bbadbbababb //str
+t  //ch
+
+ttadttatatt //after replaced
+"""
+```
