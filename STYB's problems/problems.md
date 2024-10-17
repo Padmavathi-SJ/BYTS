@@ -275,3 +275,59 @@ sfdlmnop
 0  //o/p
 """
 ```
+
+### 12. Replace Character:
+* You are given a function,"char *ReplaceCharacter(char str[], char ch1, char ch2);" Implement the function to modify and return the string ‘ str’ in such a way that all occurrences of ‘ch1’ in original string are replaced by ‘ch2’ and all occurrences of ‘ch2’  in original string are replaced by ‘ch1’.
+The function accepts a string  ‘ str’ of length n and two characters ‘ch1’ and ‘ch2’ as its arguments .
+Assumption: String Contains only lower-case alphabetical letters.
+Note: Return null if string is null. If both characters are not present in string or both of them are same , then return the string unchanged.
+
+```
+Input:
+apples
+a
+p
+
+Output:
+paales
+
+Explanation: ‘a’ in original string is replaced with ‘p’ and ‘p’ in original string is replaced with ‘a’, thus output is paales.
+
+//using java
+
+import java.util.*;
+public class Main{
+    public static String replaceChars(String str, char ch1, char ch2){
+        int len=str.length();
+        StringBuilder newStr=new StringBuilder();
+        for(int i=0; i<len; i++){
+            newStr.append(str.charAt(i));
+        }
+        for(int i=0; i<len; i++){
+            if(newStr.charAt(i) == ch1){
+                newStr.setCharAt(i, ch2);
+            }
+            else if(newStr.charAt(i) == ch2){
+                newStr.setCharAt(i, ch1);
+            }
+        }
+        
+        return newStr.toString();
+    }
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        
+        String str=input.nextLine();
+        char ch1=input.next().charAt(0);
+        char ch2=input.next().charAt(0);
+        System.out.print(replaceChars(str, ch1, ch2));
+        input.close();
+    }
+}
+"""
+apples //str
+a  //ch1
+p  //ch2
+paales //output
+"""
+```
